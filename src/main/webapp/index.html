@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+	<head>
+	<title>SUNNY</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+	<!-- Bootstrap core CSS -->
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this app -->
+	<link rel="stylesheet" href="css/app.css"/>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="lib/bootstrap/js/html5shiv.js"></script>
+		<script src="lib/bootstrap/js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+
+<body>
+
+	<ul id="navigator" class="navigation">
+		<li class="nav-item" ui-sref-active="active"><a ui-sref="home">Home</a></li>
+		<li class="nav-item" ui-sref-active="active"><a ui-sref="other">Other</a></li>
+	</ul>
+
+	<div class="view-area">
+		<div ui-view></div>
+	</div>
+
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	-->
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular/angular-ui-router.js"></script>
+
+	<script src="js/app.js"></script>
+	<!-- script src="js/services/card-service.js"></script -->
+	<script src="js/controllers/home-controller.js"></script>
+
+</body>
+</html>
