@@ -3,7 +3,12 @@
 appControllers.controller('homeController', [ '$scope', '$http', '$location',
 function($scope, $http, $location) {
 
-	$scope.tabs = [
+	$scope.goods = [
+		{id: 1, title: 'Good 1', imageUrl: ''},
+		{id: 2, title: 'Good 2', imageUrl: ''},
+	];
+
+	/*$scope.tabs = [
 		{title: 'Tab 1', content: 'Content 1'},
 		{title: 'Tab 2', content: 'Content 1'},
 		{title: 'Tab 3', content: 'Content 1'}
@@ -44,7 +49,7 @@ function($scope, $http, $location) {
 		});
 
 	};
-	
+	*/
 
 
 }]);

@@ -1,0 +1,10 @@
+.tile-wrapper {
+	display: inline-block;
+	float: left;
+	border: 4px solid #82ad2a;
+	height: 70px;
+	width: 100px;
+	text-align: center;
+	background-color: #D0FA58;
+	margin-right: 5px;
+}
